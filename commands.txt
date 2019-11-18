@@ -1,0 +1,57 @@
+echo --diplays whatever is given with the echo command, and we can write the output to desired file with > symbol followed by filename, 
+	will over ride the existing contents when an existing file name is given.
+
+nano filename.txt --opens the specified file in a command line text editor.
+
+cd directory --changes from current directory to the specified directory.
+
+ls --displays the list of files/folders(unhidden only) available in the current directory.
+
+ls -l --displays the list of files along with their persmissions.
+
+ls -a --displays the list of files both hidden and unhidden.
+
+cp -v filetocopy destinationpath --creates a copy of the specified file without removing the original file.
+
+mv --moves the file to the desired path while removing the original file.
+
+cat --Concatenate and Print(cat) is used to display the contents of the file.
+
+cat file1 file2 > newfile -- combines the files specified in to a new file.
+
+less --displays the contents of the file read only mode in a new window without cluterring the command line interface.
+
+touch file1 file2 --creates files single or multiple.
+
+
+rm filename -- removes the file for system and is near impossible to retrive it.
+
+rm -r foldername --recursively removes the folder and its contents.
+
+chown nameofowner:group filename --modifies the ownership of the file.
+
+chmod +x executablefilename --modifies the permissions of the file
+				+x makes it executable
+				+r for readable
+				+w for writable
+
+man command --gives the entire manual for the command.
+you can execute a executable file by using ./filename.sh
+
+---------------------------------------------------------------------------------------------------------------------------------------
+						MACCHNAGER
+---------------------------------------------------------------------------------------------------------------------------------------
+
+macchnager is a tool to spoof your mac address, helps to stay anonymous.
+
+macchnager -s eth0 --displays the current mac address of eth0 interface.
+
+macchanger -l --gives you the list of all vendors with their mac addresses.
+
+macchanger -r eth0 --gives a random mac address to the specified interface.
+
+------------------------------------------------------------------------------------------------------------------------------------
+						CRONTAB
+------------------------------------------------------------------------------------------------------------------------------------
+
+To automatically modify the mac address on the boot up, we use a tool called crontab
