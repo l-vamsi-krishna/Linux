@@ -55,3 +55,21 @@ macchanger -r eth0 --gives a random mac address to the specified interface.
 ------------------------------------------------------------------------------------------------------------------------------------
 
 To automatically modify the mac address on the boot up, we use a tool called crontab
+
+------------------------------------------------------------------------------------------------------------------------------------
+						CRONTAB
+------------------------------------------------------------------------------------------------------------------------------------
+
+To automatically modify the mac address on the boot up, we use a tool called crontab
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+						APACHE
+-----------------------------------------------------------------------------------------------------------------------------------
+IF ip address of the machine in virtual box is not in the range home network ip address, change the network adapter from NAT to bridged network.
+ex: virtual machine ip- 10.2.3.4 home network- 192.168.2.4, the apache server when started will host the website at 10.2.3.4, which can't be seen in the home network, Hence we need to change the adapter to bridged which makes virtual machine ip to be in home network range.
+
+service apache2 start -- starts the apache server at the ip address.
+
+This will give the default apache page, to edit this run <cd /var/www/html> where we can find the directory containing files for apache we page.
+modify index.html to display new changes.
